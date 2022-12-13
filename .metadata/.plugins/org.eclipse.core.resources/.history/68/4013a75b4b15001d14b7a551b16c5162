@@ -1,0 +1,32 @@
+package DP;
+
+import java.util.Arrays;
+
+public class Knapsack {
+	
+	public static int helper(int[] w, int n, int[] v, int c, int[][] dp) {
+		if(dp[][] != -1) 
+			return dp
+		return 0;
+	}
+	
+	public static int maximumValue(int[] w, int[] v, int c) {
+		int n = w.length;
+		int[][] dp = new int[n+1][c+1];
+		for(int i=0; i<n+1; i++) {
+			Arrays.fill(dp[i], -1);
+		}
+		return helper(w, n, v, c, dp);
+	}
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int w[] = new int[] {30,10,40,20};
+		int v[] = new int[] {10,20,30,40};
+		int c = 40;
+		maximumValue(w, v, c);
+
+	}
+
+}
